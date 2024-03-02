@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
 .meter {
     display: flex;
     gap: 10px;
@@ -58,4 +60,20 @@
 .meter .card-header-box-value {
     font-size: 14px;
     color: #333;
+}
+
+.meter .card button {
+    background-color: #ffc20e;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 13px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    font-family: "Anta", sans-serif;
 }

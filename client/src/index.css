@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+:root {
+    --col1: #ffc20e;
+}
+
 body {
     background-color: #232323;
     font-family: "Anta", sans-serif;

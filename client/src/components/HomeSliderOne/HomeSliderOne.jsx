@@ -59,7 +59,7 @@ const HomeSliderOne = () => {
                         variant="solid"
                         size="lg"
                         value={(item.value / item.goal) * 100}
-                        style={{color: "black"}}
+                        style={{color: "black", marginTop: "25px"}}
                     >
                         {simplifyFraction(item.value, item.goal)[0] + "/" + simplifyFraction(item.value, item.goal)[1]}
                     </CircularProgress>
