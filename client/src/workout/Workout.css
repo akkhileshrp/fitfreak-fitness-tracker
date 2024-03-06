@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ffc20e;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.workout {
+    font-family: "Anta", sans-serif;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+.workout-exercises {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.workout-exercise {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.workout-exercise--reverse {
+    flex-direction: row-reverse;
+}
+
+.workout-exercise-image {
+    max-width: 100%;
+    height: auto;
+    min-width: 300px;
+}
+
+.workout-exercise-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.workout-exercise--reverse .workout-exercise-content {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.workout-exercise-content h2 {
+    font-size: 50px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px #666363;
+    color: transparent;
+}
+
+.workout-exercise-content span {
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+    background-color: #ffc20e;
+    padding: 5px 20px;
+    border-radius: 35px;
+    width: fit-content;
+}
+
+.workout-exercise-content p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #f7e1a1;
+}
+
+.workout-exercises h3 {
+    -webkit-text-stroke: 1px #ffc20e;
+    color: transparent;
+    font-size: 10rem;
+    font-weight: 900;
+    border: 1px solid #54534d;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .workout-exercise {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workout-exercise-image {
+        min-width: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .workout-exercise-content {
+        margin-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .workout-exercise-content h2 {
+        font-size: 40px;
+    }
+
+    .workout-exercise-content span {
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+
+    .workout-exercise-content p {
+        font-size: 18px;
+    }
+
+    .workout-exercises h3 {
+        font-size: 8rem;
+        width: 12rem;
+    }
+
+    .mobile-view {
+        font-size: 55px;
+    }
+}

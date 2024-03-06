@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 const HomeSliderTwo = () => {
     const [workouts, setWorkouts] = useState([]);
@@ -92,14 +93,15 @@ const HomeSliderTwo = () => {
                     workouts && workouts.map((item, index) => {
                         return (
                             <SwiperSlide key={index}>
-                                <div className="swiper-slide"
+                                <Link className="swiper-slide"
                                     style={{ backgroundImage: `url(${item.imageUrl})` }}
+                                    to="/workout/chest"
                                 >
                                     <div className="swiper-slide-content">
                                         <h2>{item.type}</h2>
                                         <p>{item.durationInMin} min</p>
                                     </div>
-                                </div>
+                                </Link>
                             </SwiperSlide>
                         );
                     })}
