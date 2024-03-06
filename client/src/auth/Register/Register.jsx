@@ -1,13 +1,11 @@
 import React from 'react';
 import "./Register.css";
 import TextField from "@mui/material/TextField";
-import Navbar from '../../components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
     return (
         <>
-            <Navbar />
             <div className="container">
                 <h2>Register</h2>
                 <form>
@@ -18,6 +16,7 @@ const Register = () => {
                             variant="outlined"
                         />
                         <TextField
+
                             id="outlined-basic"
                             label="Email"
                             variant="outlined"
@@ -25,6 +24,7 @@ const Register = () => {
                     </div>
                     <div className="form-row">
                         <TextField
+
                             id="outlined-password-input"
                             label="Password"
                             type="password"
@@ -32,6 +32,7 @@ const Register = () => {
                             variant="outlined"
                         />
                         <TextField
+
                             id="outlined-password-input"
                             label="Confirm Password"
                             type="password"
@@ -41,6 +42,7 @@ const Register = () => {
                     </div>
                     <div className="form-row">
                         <TextField
+
                             id="standard-number"
                             label="Age"
                             type="number"
@@ -50,6 +52,7 @@ const Register = () => {
                             variant="standard"
                         />
                         <TextField
+
                             id="standard-number"
                             label="Height (cm)"
                             type="number"
@@ -59,6 +62,7 @@ const Register = () => {
                             variant="standard"
                         />
                         <TextField
+
                             id="standard-number"
                             label="Weight (kg)"
                             type="number"
@@ -70,6 +74,7 @@ const Register = () => {
                     </div>
                     <div className="form-row">
                         <TextField
+
                             id="standard-select-gender"
                             select
                             label="Gender"
@@ -84,6 +89,7 @@ const Register = () => {
                             <option value="other">Other</option>
                         </TextField>
                         <TextField
+
                             id="date"
                             label="Date of Birth"
                             type="date"
@@ -95,6 +101,7 @@ const Register = () => {
                     </div>
                     <div className="form-row">
                         <TextField
+
                             id="standard-select-goal"
                             select
                             label="Goal"

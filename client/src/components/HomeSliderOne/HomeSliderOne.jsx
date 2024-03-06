@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CircularProgress from "@mui/joy/CircularProgress";
+import { Link } from "react-router-dom";
 import "./HomeSliderOne.css";
 
 const HomeSliderOne = () => {
@@ -59,11 +60,13 @@ const HomeSliderOne = () => {
                         variant="solid"
                         size="lg"
                         value={(item.value / item.goal) * 100}
-                        style={{color: "black", marginTop: "25px"}}
+                        style={{ color: "black", marginTop: "25px" }}
                     >
                         {simplifyFraction(item.value, item.goal)[0] + "/" + simplifyFraction(item.value, item.goal)[1]}
                     </CircularProgress>
-                    <button>Show Report</button>
+                    <Link to={`/report/${item.name}`} style={{ textDecoration: "none" }}>
+                        <button>Show Report</button>
+                    </Link>
                 </div>
             ))}
         </div>

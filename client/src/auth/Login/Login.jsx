@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 const Login = () => {
     return (
         <>
-            <Navbar />
             <div className="container">
                 <h2>Login</h2>
                 <form>

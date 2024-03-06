@@ -6,6 +6,7 @@ import Chest from './workout/Chest';
 import { Route, Routes } from 'react-router-dom';
 import Register from './auth/Register/Register';
 import Login from './auth/Login/Login';
+import Reports from './Reports/[type]/Reports';
 
 const App = () => {
   return (
@@ -18,9 +19,10 @@ const App = () => {
             <HomeSliderTwo />
           </>
         } />
-        <Route path='/workout/chest' element={<Chest />} />
         <Route path='/auth/register' element={<Register />} />
         <Route path='/auth/login' element={<Login />} />
+        <Route path='/report/:name' element={<Reports />} />
+        <Route path='/workout/:name' element={<Chest />} />
       </Routes>
     </div>
   );

@@ -94,8 +94,8 @@ const HomeSliderTwo = () => {
                         return (
                             <SwiperSlide key={index}>
                                 <Link className="swiper-slide"
-                                    style={{ backgroundImage: `url(${item.imageUrl})` }}
-                                    to="/workout/chest"
+                                    style={{ backgroundImage: `url(${item.imageUrl})` ,textDecoration: "none" }}
+                                    to={`/workout/${item.type}`}
                                 >
                                     <div className="swiper-slide-content">
                                         <h2>{item.type}</h2>
