@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 900px;
+    border: 3px solid #ffc20e;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: grid;
+    gap: 10px;
+}
+
+.container button {
+    background-color: #ffc20e;
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    font-family: "Anta", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    width: 30%;
+    position: relative;
+    left: 35%;
+    top: 8%;
+}
+
+.container form .form-row {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container form .MuiTextField-root {
+    width: 100%;
+}
+
+.container form .MuiTextField-root input,
+.container form .MuiTextField-root label {
+    font-family: "Anta", sans-serif;
+    ;
+    outline: none;
+    color: white;
+}
+
+.container form .MuiTextField-root select {
+    color: white;
+    font-family: "Anta", sans-serif;
+}
+
+.container form .MuiTextField-root option {
+    color: #000;
+    font-family: "Anta", sans-serif;
+}
+
+.container form .MuiTextField-root input:focus {
+    border-color: #AD00FF;
+}
+
+.container form a {
+    color: #ffc20e;
+    text-decoration: none;
+    position: relative;
+    left: 0;
+}
+.container form p {
+    position: relative;
+    left: 35.8%;
+    top: 35%;
+}
+
+@media (max-width: 768px) {
+    .container form p {
+        left: 50px;
+    }
+}
